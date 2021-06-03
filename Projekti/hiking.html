@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>What's on</title>
+    <link rel="stylesheet" type="text/css" href="style-hiking.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/e60cb14d17.js" crossorigin="anonymous"></script>
+    <script src="calendar.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <h2>Hiking and other fun activites in the nature of Kosova</h2>
+        <div>
+            <section id="foto"><img src="images/hiking.jpg" id="slider-nature">
+            </section>
+            <ul class="navigation">
+                <li onmouseover="imgSlider('images/hiking.jpg')" id="foto1">
+                    <figcaption id="fig">Fig.1 - Sharr mountain, Prizren, Kosova</figcaption>
+                    <button class="mini"><figure><img src="images/hiking-mini.jpg"></figure></button></li>
+                <li onmouseover="imgSlider('images/viaf.jpg')" id="foto2">
+                    <figcaption id="fig">Fig.2 - Rugova, Peja, Kosova</figcaption>
+                    <button class="mini"><figure><img  src="images/viaf-mini.jpg"></figure></button></li>
+                <li onmouseover="imgSlider('images/snow4.jpg')" id="foto3">
+                    <figcaption id="fig">Fig.3 - Brezovica, Kosova</figcaption>
+                    <button class="mini"><figure><img  src="images/snow4_mini.jpg"></figure></button></li>
+                <li onmouseover="imgSlider('images/Kayak.jpg')" id="foto4">
+                    <figcaption id="fig">Fig.4 - Badoci Lake, Prishtina, Kosova</figcaption>
+                    <button class="mini"><figure><img src="images/Kayak-mini.jpg"></figure></button></li>
+                <li onmouseover="imgSlider('images/paragliding.jpg')" id="foto5">
+                    <figcaption id="fig">Fig.5 - Prizren, Kosova</figcaption>
+                    <button class="mini"><figure><img src="images/paragliding-mini.jpg"></figure></button></li>
+            </ul>
+        </div>
+
+        <div id="hiking">
+            <ul style="list-style: none; display: flex;">
+                <li>
+                    <div id="hiking-slider">
+                        <div class="slide active"><img src="images/hiking-slider/hiking1.jpg">
+                            <figcaption id="fig1">Fig.1 - Brod, Dragash, Kosova</figcaption>
+                        </div>
+                        <div class="slide"><img src="images/hiking-slider/hiking2.jpg">
+                            <figcaption id="fig1">Fig.3 - Restelice, Dragash, Kosova</figcaption>
+                        </div>
+                        <div class="slide"><img src="images/hiking-slider/hiking3.jpg">
+                            <figcaption id="fig1">Fig.2 - Hajla's peak, Rugove, Kosova</figcaption>
+                        </div>
+                        <button class="left"><img src="svg/right.svg"></img> </button>
+                    </div>
+                </li>
+
+
+                <li>
+                    <div id="hiking-textpart">
+                        <h3>Hiking in the mountains of Kosova</h3>
+                        <p style="outline-offset: 2em;">
+                            The best part about visiting Kosova are the beautiful mountains that sorround the country. Mountains that contain perfect views of Kosova, like hidden gems of the beautiful nature. What's more exciting about these mountains is the fact that they are easy
+                            to climb and available every season of the year. Fortunately hiking in Kosova is highly developed and every weekend there are events organised to visit mountains around Kosova. For more detailed info of the date and place check
+                            out the links below:
+                            <ul id="lista-hiking">
+                                <li>
+                                    <a href="https://www.facebook.com/kosovahikingtrips" target="_blank" rel="noreferrer noopener" style="color: black;">
+                                        <mark id="mark" style="background-color: rgba(128, 128, 128, 0.199);">Kosova Hiking Trips</mark></a>
+                                </li>
+                                <li>
+                                    <a href="http://hectrips.com/" target="_blank" rel="noreferrer noopener" style="color: black;">
+                                        <mark style="background-color: rgba(128, 128, 128, 0.199);">Hec Trips</mark></a>
+                                </li>
+                            </ul>
+                            <p> You can write and save your events for hiking at the <a href="#cal-wrap" style="font-style:italic; color: black; text-decoration: underline;">calendar</a> below.</p>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+        <div id="ferrata">
+            <ul style="list-style: none; display: flex;">
+                <li>
+                    <div id="ferrata-textpart">
+                        <h3>Climb on the rock to reach the caves</h3>
+
+                        <p id="mystring">
+                            A must fun to-do activity is Via Ferrata (from italian metal route). Via Ferrata offers you climbing to seven different caves, including Queen's cave and King's cave near city of Peja. With a professional guide and a certain security you have three offers
+                            you can choose:
+                            <ol>
+                                <li>Via Ferrata “Ari” (Length 450m/ climbing 90 mins/ Walking 30-40 mins = Total 2.30-3.00 hours)</li>
+                                <li>Via Ferrata “MAT” (Length 500m/ climbing 90 mins/ Walking 10 mins = Total 1.40 hours)</li>
+                                <li>Via Ferrata “MARIMANGAT” (Length 1 km/ climbing 4.30 hours / walking 30 mins = Total 5 hours)</li>
+                            </ol>
+                            If you want to go this weekend check the links below and find out more:
+                            <ul id="lista-hiking">
+                                <li>
+                                    <a href="https://www.facebook.com/viaferratapeje/" target="_blank" rel="noreferrer noopener" style="color: black;">
+                                        <mark id="mark" style="background-color: rgba(128, 128, 128, 0.199);">Via Ferrata Peja</mark></a>
+                                </li>
+                                <li>
+                                    <a href="http://www.marimangat.org/index.html" target="_blank" rel="noreferrer noopener" style="color: black;">
+                                        <mark style="background-color: rgba(128, 128, 128, 0.199);">Marimangat</mark></a>
+                                </li>
+                            </ul>
+                            <p> You can write and save your events for Via Ferrata at the
+                                <a href="#cal-wrap" style="font-style:italic; color: black; text-decoration: underline; text-decoration: underline;">calendar</a> below.</p>
+
+                        </p>
+                        <button style="  text-align: center;
+                        background-color: #3F51AD;
+                        color: #fff;
+                        cursor: pointer;
+                         width: 130px;" onclick="myReplaceFunc()">Replace 'Via Ferrata' with 'Iron Path'</button>
+                    </div>
+                </li>
+                <li>
+                    <div id="ferrata-slider">
+                        <div class="slide1 active1">
+                            <figcaption id="fig1">Fig.1 - Rugove, Peje, Kosova</figcaption>
+                            <img src="images/ferrata-slider/ferrata3.jpg"></div>
+                        <div class="slide1">
+                            <figcaption id="fig1">Fig.3 - Rugove, Peje, Kosova</figcaption>
+                            <img src="images/ferrata-slider/ferrata2.jpg"></div>
+                        <div class="slide1">
+                            <figcaption id="fig1">Fig.2 - Rugove, Peje, Kosova</figcaption>
+                            <img src="images/ferrata-slider/ferrata1.jpg"></div>
+                        <button class="left1"><img src="svg/left.svg"></img> </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="skiing">
+            <ul style="list-style: none; display: flex;">
+                <li>
+                    <div id="skiing-slider">
+                        <div class="slide2 active2">
+                            <figcaption id="fig1">Fig.1 - Brezovice, Kosova</figcaption>
+                            <img src="images/ski-slider/ski1.jpg"></div>
+                        <div class="slide2">
+                            <figcaption id="fig1">Fig.3 - Brezovice, Kosova</figcaption>
+                            <img src="images/ski-slider/ski2.jpg"></div>
+                        <div class="slide2">
+                            <figcaption id="fig1">Fig.2 - Brezovice, Kosova</figcaption>
+                            <img src="images/ski-slider/ski3.jpg"></div>
+                        <button class="left2"><img src="svg/right.svg"></img> </button>
+                    </div>
+                </li>
+                <li>
+                    <div id="skiing-textpart">
+                        <h3>Skiing in the snowy Kosova</h3>
+                        <p>
+                            While visiting Kosovo during winter season, December-February, you can visit the amazing Brezovica known the best place where you and your loved ones can go ski. Besides Brezovica there are other places also such as Boge and Prevalla. Skiing and enjoying
+                            the view Kosova can bring during winter is the best time to also spend the holidays. Furthermore you can find out about skiing in Kosova at the links below:
+                            <ul id="lista-hiking">
+                                <li>
+                                    <a href="https://www.facebook.com/snownjeriofficial" target="_blank" rel="noreferrer noopener" style="color: black;">
+                                        <mark id="mark" style="background-color: rgba(128, 128, 128, 0.199);">Snow Njeri</mark></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.snow-forecast.com/countries/Kosovo/resorts" target="_blank" rel="noreferrer noopener" style="color: black;">
+                                        <mark style="background-color: rgba(128, 128, 128, 0.199);">Ski Kosovo</mark></a>
+                                </li>
+                            </ul>
+                            <p> You can write and save your events for Via Ferrata at the
+                                <a href="#cal-wrap" style="font-style:italic; color: black; text-decoration: underline;">calendar</a> below.</p>
+                </li>
+            </ul>
+            </div>
+
+            <div id="kayak">
+                <ul style="list-style: none; display: flex;">
+                    <li>
+                        <div id="kayak-textpart">
+                            <h3>Kayaking in splendid waters of Kosova</h3>
+                            <p>
+                                Another fun activity that you can have in Kosovo is kayaking in the waters of Badoc lake and Drini i Bardhe river. This fun activity is organised by Super Campers. Super Campers is an organization the has plans many events on the beautiful albanian nature.
+                                Kayaking is an activity that takes place mainly in summer when the weather is warm and the sky is blue but not just that. Furthermore check out about this event in the links below:
+                                <ul id="lista-hiking">
+                                    <li>
+                                        <a href="https://www.facebook.com/Kayak-In-Kosovo-1948018955431602/" target="_blank" rel="noreferrer noopener" style="color: black;  ">
+                                            <mark id="mark" style="background-color: rgba(128, 128, 128, 0.199);">Kayaking in Kosova</mark></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.beinkosovo.com/kayaking-in-kosovo/" target="_blank" rel="noreferrer noopener" style="color: black;">
+                                            <mark style="background-color: rgba(128, 128, 128, 0.199);">Be in Kosova</mark></a>
+                                    </li>
+                                </ul>
+                                <p> You can write and save your events for kayaking at the <a href="#cal-wrap" style="font-style:italic; color: black; text-decoration: underline;">calendar</a> below.</p>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="kayak-slider">
+                            <div class="slide3 active3">
+                                <figcaption id="fig1">Fig.1 - Peje, Kosova</figcaption>
+                                <img src="images/kayak-slider/kayak3.jpg"></div>
+                            <div class="slide3">
+                                <figcaption id="fig1">Fig.3 - Peje, Kosova</figcaption>
+                                <img src="images/kayak-slider/kayak2.jpg"></div>
+                            <div class="slide3">
+                                <figcaption id="fig1">Fig.2 - Badoci Lake, Prishtine, Kosova</figcaption>
+                                <img src="images/kayak-slider/kayak1.jpg"></div>
+                            <button class="left3"><img src="svg/left.svg"></img> </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <div id="paragliding">
+                <ul style="list-style: none; display: flex;">
+                    <li>
+                        <div id="paragliding-slider">
+                            <div class="slide4 active4">
+                                <figcaption id="fig1">Fig.1 - Peje, Kosova</figcaption>
+                                <img src="images/fly-slider/fly1.jpg"></div>
+                            <div class="slide4">
+                                <figcaption id="fig1">Fig.3 - Prizren, Kosova</figcaption>
+                                <img src="images/fly-slider/fly2.jpg"></div>
+                            <div class="slide4">
+                                <figcaption id="fig1">Fig.2 - Prizren, Kosova</figcaption>
+                                <img src="images/fly-slider/fly3.jpg"></div>
+                            <button class="left4"><img src="svg/right.svg"></img> </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="paragliding-textpart">
+                            <h3>Fly over the beautiful view of Kosova</h3>
+                            <p>
+                                Last but not least, there is the amazing opportunity of flying above the beautiful cities of Kosova. This event takes mainly place in the city of Prizren and in the city of Peja, is available for every season of the year. To find out more about this fun
+                                activity check out the the links below:
+                                <ul id="lista-hiking">
+                                    <li>
+                                        <a href="https://www.facebook.com/paraglidingkosova/" target="_blank" rel="noreferrer noopener" style="color: black;  ">
+                                            <mark id="mark" style="background-color: rgba(128, 128, 128, 0.199);">Paragliding in Kosova</mark></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://bnadventure.com/paragliding-above-peja/" target="_blank" rel="noreferrer noopener" style="color: black;">
+                                            <mark style="background-color: rgba(128, 128, 128, 0.199);">Paragliding</mark></a>
+                                    </li>
+                                </ul>
+                                <p> You can write and save your events for kayaking at the <a href="#cal-wrap" style="font-style:italic; color: black; text-decoration: underline;">calendar</a> below.</p>
+
+                            </p>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- pjesa e calendarit-->
+            <div id="cal-wrap">
+                <!-- [PERIOD SELECTOR] -->
+                <h3 style="color:white; padding-bottom: 3%;"><b>Select the year and the month you want to save your events!</b> </h3>
+                <div id="cal-date" style="width: 600px;">
+
+                    <select id="cal-mth"></select>
+                    <select id="cal-yr"></select>
+                    <input id="cal-set" type="button" value="GO" />
+                </div>
+
+                <!-- [CALENDAR] -->
+                <div id="cal-container"></div>
+
+                <!-- [EVENT] -->
+                <div id="cal-event">
+
+                </div>
+            </div>
+
+            <!--FOOTER-->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>company</h4>
+                            <ul>
+                                <li> <a href="#">about us</a></li>
+                                <li> <a href="#">our services</a></li>
+                                <li> <a href="#">privacy</a></li>
+                                <li> <a href="#">affiliate program</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="footer-col">
+                            <h4>popular links</h4>
+                            <ul>
+                                <li> <a href="#">explore kosova</a></li>
+                                <li> <a href="#">things to do </a></li>
+                                <li> <a href="#">what's on</a></li>
+                                <li> <a href="#">articles</a></li>
+                                <li> <a href="#">places to visit</a></li>
+
+                            </ul>
+
+                        </div>
+                        <div class="footer-col">
+                            <h4>helpful information</h4>
+                            <ul>
+                                <li> <a href="#">plan your trip</a></li>
+                                <li> <a href="#">contact us</a></li>
+                                <li> <a href="#">visa guide</a></li>
+                                <li> <a href="#">department of tourism</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="footer-col">
+                            <h4>follow us</h4>
+                            <div class="social-links">
+
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="copy">
+                        <h4> Copyright 2020 <i class="fas fa-copyright"></i> Get to know Kosova. All rights reserved</h4>
+
+                    </div>
+            </footer>
+
+            </div>
+
+
+
+
+
+            <script>
+                {
+
+                    function imgSlider(anything) {
+                        document.getElementById("slider-nature").src = anything;
+                    }
+                }
+            </script>
+            <script src="slider-hiking.js"></script>
+            <script src="regexig.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style-festival.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="calendar.js"></script>
+    <script src="https://kit.fontawesome.com/e60cb14d17.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Festivals</title>
+</head>
+
+<body>
+
+    <div id="wrapper-festival">
+        <h2>Festivals in Kosova</h2>
+        <div>
+            <div id="foto"><img src="images/sunnyhill.jpg" id="slider-festival"></div>
+            <ul class="navigation">
+                <li onmouseover="imgSlider1('images/sunnyhill.jpg')" id="foto1">
+                    <figcaption id="fig">Fig.1 - Sunny Hill Festival, Prishtina, Kosova</figcaption>
+                    <button class="mini"><img src="images/sunnyhill-mini.jpg"></button></li>
+                <li onmouseover="imgSlider1('images/doku.jpg')" id="foto2">
+                    <figcaption id="fig">Fig.2 - Doku Fest, Prizren, Kosova</figcaption>
+                    <button class="mini"><img src="images/doku-mini.jpg"></button></li>
+                <li onmouseover="imgSlider1('images/hardh-concert.jpg')" id="foto3">
+                    <figcaption id="fig">Fig.3 - Hardh Fest, Rahovec, Kosova</figcaption>
+                    <button class="mini"><img src="images/hardh-concert-mini.jpg"></button></li>
+                <li onmouseover="imgSlider1('images/prifest.jpg')" id="foto4">
+                    <figcaption id="fig">Fig.4 - PriFest, Prishtina, Kosova</figcaption>
+                    <button class="mini"><img src="images/prifest-mini.jpg"></button></li>
+            </ul>
+        </div>
+
+
+        <div id="sunnyhill">
+            <ul style="list-style: none; display: flex;">
+                <li>
+                    <div id="sunnyhill-slider">
+                        <div class="slide-sunny active-sunny">
+                            <figcaption id="fig1">Fig.1 - Sunny Hill, Prishtina, Kosova</figcaption>
+                            <img src="images/sunnyhill-slider/sunny1.jpg"></div>
+                        <div class="slide-sunny">
+                            <figcaption id="fig1">Fig.3 - Sunny Hill, Prishtina, Kosova</figcaption>
+                            <img src="images/sunnyhill-slider/sunny2.jpg"></div>
+                        <div class="slide-sunny">
+                            <figcaption id="fig1">Fig.2 - Sunny Hill, Prishtina, Kosova</figcaption>
+                            <img src="images/sunnyhill-slider/sunny3.jpg"></div>
+                        <button class="left-sunny"><img src="svg/right-festival.svg"></img> </button>
+                    </div>
+                </li>
+                <li>
+                    <div id="sunnyhill-textpart">
+                        <h3>Sunny Hill Festival</h3>
+                        <p>
+                            Sunny Hill Festival is the biggest festival organized not only in Kosova but also in the region. This three-day musical event is held every August in Prishtina. This festival is founded by the Sunny Hill Foundation which is a charity organization under
+                            the great artist Dua Lipa. It helps to reduce injustice and poverty in Kosova. Many famous artists perform at the festival not only local but as well as international. Check out more on the links below:
+
+
+                            <ul id="lista-festival">
+                                <li>
+                                    <a href="https://sunnyhillfestival.com/" target="_blank" rel="noreferrer noopener" style="color: black;">
+                                        <mark id="mark" style="background-color: rgba(128, 128, 128, 0.199);">Sunny Hill Festival</mark></a>
+                                </li>
+                                <li>
+                                    <a href="https://sunnyhillfoundation.org/project/sunny-hill-festival/" target="_blank" rel="noreferrer noopener" style="color: black;">
+                                        <mark style="background-color: rgba(128, 128, 128, 0.199);">Sunny Hill Foundation</mark></a>
+                                </li>
+                            </ul>
+                            <p> You can write and save your events for Sunny Hill festival at the <a href="#cal-wrap" style="font-style:italic; color: black; text-decoration: underline;">calendar</a> below.</p>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="doku">
+            <ul style="list-style: none; display: flex;">
+                <li>
+                    <div id="doku-textpart">
+                        <h3>DokuFest</h3>
+                        <p>
+                            DokuFest also known as International Documentary and Short Film Festival, held in the beautiful city of Prizren in the season of summer usually in August. The festival is nine-day long and during there are played around 200 short films from all around
+                            the world. Worth mentioning are also photo exhibitions, lively music events and debates that are part of the festival. The enthusiastic and lively atmosphere in the historic center of Prizren during DokuFest is worth experiencing,
+                            check out the link below to find out more about the dates this event takes place:
+                            <ul id="lista-festival">
+                                <li>
+                                    <a href="https://dokufest.com/" target="_blank" rel="noreferrer noopener" style="color: black;">
+                                        <mark id="mark" style="background-color: rgba(128, 128, 128, 0.199);">Sunny Hill Festival</mark></a>
+                                </li>
+                            </ul>
+                            <p> You can write and save your events for DokuFest at the <a href="#cal-wrap" style="font-style:italic; color: black; text-decoration: underline;">calendar</a> below.</p>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div id="doku-slider">
+                        <div class="slide-doku active-doku">
+                            <figcaption id="fig1">Fig.1 - DokuFest, Prizren, Kosova</figcaption>
+                            <img src="images/doku-slider/doku1.jpg"></div>
+                        <div class="slide-doku">
+                            <figcaption id="fig1">Fig.3 - DokuFest, Prizren, Kosova</figcaption>
+                            <img src="images/doku-slider/doku2.jpg"></div>
+                        <div class="slide-doku">
+                            <figcaption id="fig1">Fig.2 - DokuFest, Prizren, Kosova</figcaption>
+                            <img src="images/doku-slider/doku3.jpg"></div>
+                        <button class="left-doku"><img src="svg/left-festival.svg"></img> </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="hardh">
+            <ul style="list-style: none; display: flex;">
+                <li>
+                    <div id="hardh-slider">
+                        <div class="slide-hardh active-hardh ">
+                            <figcaption id="fig1">Fig.1 - Hardh Fest, Rahovec, Kosova</figcaption>
+                            <img src="images/hardh-slider/hardh3.jpg"></div>
+                        <div class="slide-hardh ">
+                            <figcaption id="fig1">Fig.3 - Hardh Fest, Rahovec, Kosova</figcaption>
+                            <img src="images/hardh-slider/hardh2.jpg"></div>
+                        <div class="slide-hardh ">
+                            <figcaption id="fig1">Fig.2 - Hardh Fest, Rahovec, Kosova</figcaption>
+                            <img src="images/hardh-slider/hardh1.jpg"></div>
+                        <button class="left-hardh "><img src="svg/right-festival.svg"></img> </button>
+                    </div>
+                </li>
+                <li>
+                    <div id="hardh-textpart">
+                        <h3>Hardh Fest</h3>
+                        <p>
+                            Hardh Fest is a festival that takes place in Rahovec. The four-day festival contains concerts, promoting the local wine and raki. Based on the fact that city of Rahovec is known for its gigantic grape harvest. With the amazing atmosphere of getting to
+                            experience local traditions and music. Find out more by clicking on the link below:
+                            <ul id="lista-festival">
+                                <li>
+                                    <a href="http://hardhfest.com/" target="_blank" rel="noreferrer noopener" style="color: white;">
+                                        <mark id="mark" style="background-color: rgba(128, 128, 128, 0.199);">HardhFest</mark></a>
+                                </li>
+                            </ul>
+                            <p> You can write and save your events for HardhFest at the <a href="#cal-wrap" style="font-style:italic; color: black; text-decoration: underline;">calendar</a> below.</p>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+        <div id="prifest">
+            <ul style="list-style: none; display: flex;">
+                <li>
+                    <div id="prifest-textpart">
+                        <h3>PriFest</h3>
+                        <p>
+                            Prishtina International Film Festival (PriFest) is the biggest film event in Kosova. This festival has four competition programs: the Balkan film competition program, the European film competition, the Middle-length competition and Documentary film competition.
+                            It also has non-competitive programs named the Focus program, which supports and promotes the cinematography of a specific country. PriFest is a five-day festival usually held in summer season, specifically in July, in Prishtina.
+                            Find out more about PriFest from the link below:
+                            <ul id="lista-festival">
+                                <li>
+                                    <a href="https://prifest.org/" target="_blank" rel="noreferrer noopener" style="color: black;">
+                                        <mark id="mark" style="background-color: rgba(128, 128, 128, 0.199);">PriFest</mark></a>
+                                </li>
+                            </ul>
+                            <p> You can write and save your events for PriFest at the <a href="#cal-wrap" style="font-style:italic; color: black; text-decoration: underline;">calendar</a> below.</p>
+                        </p>
+                        </p>
+                    </div>
+                </li>
+                <li>
+
+                    <div id="prifest-slider">
+                        <div class="slide-pri active-pri">
+                            <figcaption id="fig1">Fig.1 - PriFest, Prishtina, Kosova</figcaption>
+                            <img src="images/prifest-slider/pri2.jpg"></div>
+                        <div class="slide-pri">
+                            <figcaption id="fig1">Fig.3 - PriFest, Prishtina, Kosova</figcaption>
+                            <img src="images/prifest-slider/pri1.jpg"></div>
+                        <div class="slide-pri">
+                            <figcaption id="fig1">Fig.2 - PriFest, Prishtina, Kosova</figcaption>
+                            <img src="images/prifest-slider/pri3.jpg"></div>
+                        <button class="left-pri"><img src="svg/left-festival.svg"></img> </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- pjesa e calendarit-->
+        <div id="cal-wrap">
+            <!-- [PERIOD SELECTOR] -->
+            <h3 style="color:white; padding-bottom: 3%;"><b>Select the year and month you want to find out about events!</b> </h3>
+            <div id="cal-date" style="width: 600px;">
+
+                <select id="cal-mth"></select>
+                <select id="cal-yr"></select>
+                <input id="cal-set" type="button" value="GO" />
+            </div>
+
+            <!-- [CALENDAR] -->
+            <div id="cal-container"></div>
+
+            <!-- [EVENT] -->
+            <div id="cal-event">
+
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li> <a href="#">about us</a></li>
+                            <li> <a href="#">our services</a></li>
+                            <li> <a href="#">privacy</a></li>
+                            <li> <a href="#">affiliate program</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="footer-col">
+                        <h4>popular links</h4>
+                        <ul>
+                            <li> <a href="#">explore kosova</a></li>
+                            <li> <a href="#">things to do </a></li>
+                            <li> <a href="#">what's on</a></li>
+                            <li> <a href="#">articles</a></li>
+                            <li> <a href="#">places to visit</a></li>
+
+                        </ul>
+
+                    </div>
+                    <div class="footer-col">
+                        <h4>helpful information</h4>
+                        <ul>
+                            <li> <a href="#">plan your trip</a></li>
+                            <li> <a href="#">contact us</a></li>
+                            <li> <a href="#">visa guide</a></li>
+                            <li> <a href="#">department of tourism</a></li>
+                        </ul>
+
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="copy">
+                    <h4> Copyright 2020 <i class="fas fa-copyright"></i> Get to know Kosova. All rights reserved</h4>
+
+                </div>
+        </footer>
+        </div>
+
+        <script>
+            {
+
+                function imgSlider1(anything) {
+                    document.getElementById("slider-festival").src = anything;
+                }
+            }
+        </script>
+        <script src="slider-festival.js "></script>
+</body>
+
+</html>
